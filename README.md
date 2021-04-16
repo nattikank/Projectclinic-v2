@@ -1,4 +1,4 @@
-# clinic_test
+# install clinic
 install > npm i 
 # run project
 npm start 
