@@ -663,9 +663,9 @@ app.get("/test",(req,res)=>{
 //   var port = server.address().port;
 //   console.log("Express is working on port " + port);
 // });
-server.listen(8080,()=>{
+server.listen(5000,()=>{
 
-  console.log('Node app is running on port 8080')
+  console.log('Node app is running on port 5000')
   
   })
 
