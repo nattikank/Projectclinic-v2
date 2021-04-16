@@ -1,0 +1,182 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+Intro{
+  width: 100%;
+}
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: wheat;
+  background-size: 1300px 500px; 
+  border-radius: .3rem;
+}
+
+.bgColorjum{
+  background:#fff !important;
+}
+.btn{
+  color: #fff;
+  border: #fff;
+}
+body{
+  background: url(https://firebasestorage.googleapis.com/v0/b/photo-9b645.appspot.com/o/bg1.png?alt=media&token=c4c73a71-870a-4ff0-9010-0ceeb949a139);
+  font-family: 'Kanit', sans-serif;
+  background-size: 1500px 900px;
+  font-family: 'Kanit', sans-serif;
+}
+.container{
+  background-color: whitesmoke; 
+  padding: 20px;
+}
+.font{
+  font-family: 'Kanit', sans-serif;
+}
+.bg-light {
+  background-color: #fff!important;
+  box-shadow:  0 1px 10px 0 rgba(0, 0, 0, 0.10);
+}
+.bg-input{
+ background-color: whitesmoke ;
+}
+.nav-link{
+  color:#A29150     !important;
+}
+.nav-link:hover{
+  color: #282c34 !important;
+}
+.nav-link:focus{
+  color: #282c34 !important;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+.adminActions {
+  position: fixed;
+  bottom: 35px; right: 35px;
+}
+
+  .adminButton {
+    height: 60px;
+    width: 60px;
+    background-color: #2E4053;
+    border-radius: 50%;
+    display: block;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+    .adminButton i {
+      font-size: 22px;
+    }
+
+  .adminButtons {
+    position: absolute;
+    width: 100%;
+    bottom: 120%;
+    text-align: center;
+  }
+
+    .adminButtons a {
+      display: block;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-decoration: none;
+      margin: 10px auto 0;
+      line-height: 1.15;
+      color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      position: relative;
+      box-shadow: 0 0 5px 1px rgb(23, 87, 224);
+    }
+
+      .adminButtons a:hover {
+        transform: scale(1.05);
+      }
+
+      
+      .adminButtons a:nth-child(1) { background-color:#3b5998;transition: opacity .2s ease-in-out .25s, transform .15s ease-in-out;}
+     
+      .adminButtons a:nth-child(2) { background-color:#00b900;transition: opacity .2s ease-in-out .15s, transform .15s ease-in-out;}
+
+      .adminActions a i {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+  .adminToggle {
+    -webkit-appearance: none;
+    position: absolute;
+    border-radius: 50%;
+    top: 0; left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+    transition: box-shadow .2s ease-in-out;
+    box-shadow: 0 3px 5px 1px rgba(51, 51, 51, .3);
+  }
+
+    .adminToggle:hover {
+      box-shadow: 0 3px 6px 2px rgba(51, 51, 51, .3);
+    }
+
+    .adminToggle:checked ~ .adminButtons a {
+      opacity: 1;
+      visibility: visible;
+    }
